@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+
+  <title>Tip calculator app</title>
+
+</head>
+
+<body>
+  <main>
+
+    <div id="left">
+
+
+      <form method="dialog">
+
+      <section id="top-bill">
+
+        <p>Bill</p>
+        <input type="number" name="bNumber" id="b-number">
+        <img id="dollar" alt="Dollar Icon on bill" src="./images/icon-dollar.svg">
+
+      </section>
+
+
+
+      <section id="middle">
+
+        <p>Select Tip %</p>
+
+        <section id="button-container">
+          <button onclick="calculator(5)">5%</button>
+          <button onclick="calculator(10)">10%</button>
+          <button onclick="calculator(15)">15%</button>
+          <button onclick="calculator(25)">25%</button>
+          <button onclick="calculator(50)">50%</button>
+          <button onclick="changeCustom()" id="custom">Custom</button>
+        </section>
+
+
+        <p>Number of People</p>
+        <input type="number" name="pNumber" id="p-number">
+        <img id="person" alt="Person icon inside input" src="./images/icon-person.svg">
+      </section>
+
+    </div>
+
+    <div id="right">
+
+      <section id="result">
+
+      <p>Tip Amount</p>
+      <h6>/ person</h6>
+      <p><input type="number" id="tip-amount" readonly placeholder="0.00"></p>
+
+      <section id="total">
+      <p>Total</p>
+      <h6>/ person</h6>
+      <p><input type="number" id="people-total" readonly placeholder="0.00"></p>
+    </section>
+
+    </section>
+
+      <input type="reset" value="RESET" id="reset">
+
+    </div>
+
+  </form>
+
+  </main>
+
+  </div>
+</body>
+
+</html>
